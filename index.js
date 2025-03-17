@@ -3,7 +3,7 @@ var hbs = require('hbs');
 var session = require("express-session");
 var mongoClient = require("mongodb").MongoClient;
 var db;
-url = process.env.MONGO_URL ||"mongodb+srv://maheswarreddy:8374849909@music-app-db-hexhh.mongodb.net/?retryWrites=true&w=majority";
+url = process.env.MONGO_URL ||"mongodb+srv://maheswarreddy:8374849909@music-app-db-hexhh.mongodb.net/?retryWrites=true&w=majority";//change here
 mongoClient.connect(url, function (err, client) {
     if (err) throw err;
     db = client.db("musify");
